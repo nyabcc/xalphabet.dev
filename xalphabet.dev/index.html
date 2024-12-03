@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="xalphabet.dev">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="xalphabet.dev">
+    <meta property="og:description" content="ehm">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://wwwxalphabet.dev/assets/hi.jpg">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+    <meta property="og:image:alt" content="">
+    
+    <link rel="icon" type="image/jpeg" href="assets/hi.jpg">
+    
+    <link rel="preload" href="assets/hi.jpg" as="image">
+    <link rel="preload" href="assets/_.gif" as="image">
+    <link rel="preload" href="assets/click.mp3" as="audio">
+    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <title>xalphabet.dev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-content">
+            <h1>xalphabet.dev</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="click-prompt">click to enter</div>
+        </div>
+    </div>
+
+    <audio id="clickSound" preload="auto">
+        <source src="assets/click.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="user-info" style="display: none;">
+        <img src="assets/hi.jpg" alt="Profile" class="user-avatar">
+        <span class="username">xalphabet_</span>
+        <span class="user-subtitle">ehm</span>
+    </div>
+
+    <div class="now-playing" style="display: none;">
+        <div class="song-info">
+            <div class="title-wrapper">
+                <span>Now Playing:</span>
+                <span class="song-title"></span>
+            </div>
+            <button class="toggle-controls">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+        <div class="player-controls">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="time-info">
+                    <span class="current-time">0:00</span>
+                    <span class="duration">0:00</span>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="control-btn mute-btn">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="control-btn skip-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="audio-container" style="display: none;">
+        <audio class="playlist-song" preload="auto" data-title="nuts" data-artist="lil peep, rainy bear">
+            <source src="assets/nuts.mp3" type="audio/mpeg">
+        </audio>
+        <audio class="playlist-song" preload="auto" data-title="Swim" data-artist="Chase Atlantic">
+            <source src="assets/Swim.mp3" type="audio/mpeg">
+        </audio>
+        <audio class="playlist-song" preload="auto" data-title="Consume (feat. Goon Des Garcons)" data-artist="Chase Atlantic, GOON DES GARCONS*">
+            <source src="assets/consume.mp3" type="audio/mpeg">
+        </audio>
+        <audio class="playlist-song" preload="auto" data-title="favorite" data-artist="Isabel LaRosa">
+            <source src="assets/favorite.mp3" type="audio/mpeg">
+        </audio>
+        <audio class="playlist-song" preload="auto" data-title="i'm yours" data-artist="Isabel LaRosa">
+            <source src="assets/yours.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <main class="content hidden">
+        <div class="profile">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <img src="assets/hi.jpg" alt="Profile Picture" class="profile-avatar">
+                    <div class="profile-title">
+                        <h2>xalphabet.dev</h2>
+                        <div class="typewriter-container">
+                            <span class="profile-subtitle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.xalphabet.dev" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                    <a href="mailto:hi@xalphabet.dev" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://roblox.com/users/4215622602/profile" target="_blank"><i class="fa-solid fa-gamepad"></i></a>
+                    <a href="https://tiktok.com/@xalphabet.dev?_t=8r9HFbh1kPH&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://snapchat.com/add/xalphabet.dev" target="_blank"><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
